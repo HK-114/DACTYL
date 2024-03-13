@@ -23,7 +23,7 @@
 &kp CLCK    &kp A       &kp S        &kp D      &kp F     &kp G      &kp PG_UP  &kp PG_DN  &kp H      &kp J          &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHIFT  &kp Z       &kp X        &kp C      &kp V     &kp B                            &kp N      &kp M          &kp COMMA  &kp DOT   &kp FSLH  &kp GRAVE
 &kp LCTRL   &lt 3 LALT  &kp HOME     &kp END    &kp BSPC  &kp SPACE                        &kp SPACE  &kp BACKSPACE  &kp B      &kp DOWN  &kp LEFT  &kp RIGHT
-                        &mt LCTRL C  &kp ENTER  &kp DOWN  &kp UP                           &kp LEFT   &kp RIGHT      &kp ENTER  &mo 1
+                        &mt LCTRL C  &kp ENTER  &kp LEFT  &kp RIGHT                        &kp F1     &mo 1          &kp DOWN   &kp UP
             >;
         };
 
