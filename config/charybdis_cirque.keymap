@@ -27,8 +27,8 @@
             #binding-cells = <0>;
             bindings = <&kp LC(TAB)>;
             label = "CTRLTAB";
-            wait-ms = <5>;
-            tap-ms = <5>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         hpfx: hpfx {
