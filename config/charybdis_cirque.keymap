@@ -25,9 +25,9 @@
         ctrltab: ctrltab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp TAB>;
+            bindings = <&kp LC(TAB)>;
             label = "CTRLTAB";
-            wait-ms = <5>;
+            wait-ms = <10>;
             tap-ms = <10>;
         };
 
