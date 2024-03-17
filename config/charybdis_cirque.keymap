@@ -27,7 +27,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(TAB)>;
             label = "CTRLTAB";
-            wait-ms = <10>;
+            wait-ms = <20>;
             tap-ms = <20>;
         };
 
