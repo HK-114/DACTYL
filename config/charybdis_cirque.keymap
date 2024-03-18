@@ -25,10 +25,10 @@
         ctrltab: ctrltab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(TAB)>;
+            bindings = <&kp LCTRL &kp TAB>;
             label = "CTRLTAB";
-            wait-ms = <20>;
-            tap-ms = <20>;
+            wait-ms = <50>;
+            tap-ms = <50>;
         };
 
         hpfx: hpfx {
@@ -72,8 +72,8 @@
             #binding-cells = <0>;
             bindings = <&kp SPACE &kp Q &kp C &kp S &kp SPACE &kp SPACE &kp X &kp X &kp N &kp SPACE>;
             label = "QCS";
-            wait-ms = <8>;
-            tap-ms = <8>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         bz2: bz2 {
