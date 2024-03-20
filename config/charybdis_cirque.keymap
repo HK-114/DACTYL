@@ -86,29 +86,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        LB {
-            bindings = <&kp ENTER>;
-            key-positions = <58 59>;
-        };
-
-        RB {
-            bindings = <&kp ENTER>;
-            key-positions = <61 60>;
-        };
-
-        jietu {
-            bindings = <&kp LA(A)>;
-            key-positions = <59 29>;
-        };
-
-        weixin {
-            bindings = <&kp LA(LC(Q))>;
-            key-positions = <59 15>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -116,24 +94,24 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&kp ESC     &kp N1  &kp N2        &kp N3          &kp N4        &kp N5         &kp MINUS  &kp EQUAL  &kp N6         &kp N7     &kp N8      &kp N9     &kp N0      &kp BSPC
-&kp TAB     &kp Q   &kp W         &kp E           &kp R         &kp T          &kp EQUAL  &QCS       &kp Y          &kp U      &kp I       &kp O      &kp P       &kp MINUS
-&kp CLCK    &kp A   &kp S         &kp D           &kp F         &kp G          &hpfx      &QCS       &kp H          &kp J      &kp K       &kp L      &kp COLON   &kp EQUAL
-&kp LSHIFT  &kp Z   &kp X         &kp C           &kp V         &kp B                                &kp SLASH      &kp N      &kp M       &kp COMMA  &kp PERIOD  &kp GRAVE
-&kp LCTRL   &mo 1   &bz2          &altzz          &kp SPACE     &kp BACKSPACE                        &kp BACKSPACE  &kp SPACE  &kp KP_DOT  &kp QMARK  &mo 2       &mo 3
-                    &kp LEFT_ALT  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_GUI                         &mo 3          &mo 1      &kp LEFT    &kp RIGHT
+&kp ESC     &kp N1         &kp N2        &kp N3          &kp N4        &kp N5        &kp MINUS  &kp EQUAL      &kp N6     &kp N7     &kp N8      &kp N9     &kp N0      &kp BSPC
+&kp TAB     &kp Q          &kp W         &kp E           &kp R         &kp T         &kp EQUAL  &QCS           &kp Y      &kp U      &kp I       &kp O      &kp P       &kp MINUS
+&kp CLCK    &kp A          &kp S         &kp D           &kp F         &kp G         &hpfx      &kp BACKSPACE  &kp H      &kp J      &kp K       &kp L      &kp COLON   &kp EQUAL
+&kp LSHIFT  &kp Z          &kp X         &kp C           &kp V         &kp B                                   &kp SLASH  &kp N      &kp M       &kp COMMA  &kp PERIOD  &kp GRAVE
+&kp LCTRL   &kp BACKSPACE  &bz2          &altzz          &lt 1 SPACE   &kp ENTER                               &kp ENTER  &kp SPACE  &kp KP_DOT  &kp QMARK  &mo 2       &mo 3
+                           &kp LEFT_ALT  &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_GUI                            &mo 3      &mo 1      &kp LEFT    &kp RIGHT
             >;
         };
 
         number_layer {
             label = "NUMBER";
             bindings = <
-&none  &kp F1         &kp F2          &kp F3          &kp F4           &kp F5    &kp F11  &kp F12  &kp F6    &kp F7    &kp F8  &kp F9     &kp F10  &none
-&none  &kp LA(LC(Q))  &caps_word      &kp UP_ARROW    &none            &QCS      &bthbc   &none    &none     &none     &none   &none      &none    &none
-&none  &kp LA(A)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &tcj     &none    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none    &none
-&none  &none          &none           &none           &zspace          &ctrltab                    &none     &none     &none   &none      &none    &none
-&none  &none          &none           &none           &none            &none                       &none     &none     &none   &none      &none    &none
-                      &mo 3           &kp BSPC        &kp BSPC         &none                       &none     &none     &none   &none
+&none  &kp F1         &kp F2      &kp F3         &kp F4         &kp F5    &kp F11  &kp F12  &kp F6    &kp F7    &kp F8  &kp F9     &kp F10  &none
+&none  &kp LA(LC(Q))  &caps_word  &none          &none          &QCS      &bthbc   &none    &none     &none     &none   &none      &none    &none
+&none  &kp LA(A)      &none       &kp BACKSPACE  &kp BACKSPACE  &none     &tcj     &none    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none    &none
+&none  &none          &none       &none          &zspace        &ctrltab                    &none     &none     &none   &none      &none    &none
+&none  &none          &none       &none          &none          &none                       &none     &none     &none   &none      &none    &none
+                      &none       &kp BSPC       &kp BSPC       &none                       &none     &none     &none   &none
             >;
         };
 
