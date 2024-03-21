@@ -14,8 +14,16 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: charybdis_cirque_left
+    shield: charybdis_cirque_central_dongle dongle_display
+    artifact-name: charybdis_cirque_central_dongle
   - board: nice_nano_v2
-    shield: charybdis_cirque_right
+    shield: charybdis_cirque_central_left
+    artifact-name: charybdis_cirque_central_left
+  - board: nice_nano_v2
+    shield: charybdis_cirque_peripheral_left
+    artifact-name: charybdis_cirque_peripheral_left
+  - board: nice_nano_v2
+    shield: charybdis_cirque_peripheral_right
+    artifact-name: charybdis_cirque_peripheral_right
   - board: nice_nano_v2
     shield: settings_reset

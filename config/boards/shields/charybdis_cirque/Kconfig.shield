@@ -1,5 +1,11 @@
-config SHIELD_CHARYBDIS_CIRQUE_LEFT
-    def_bool $(shields_list_contains,charybdis_cirque_left)
+config SHIELD_CHARYBDIS_CIRQUE_CENTRAL_DONGLE
+    def_bool $(shields_list_contains,charybdis_cirque_central_dongle)
 
-config SHIELD_CHARYBDIS_CIRQUE_RIGHT
-    def_bool $(shields_list_contains,charybdis_cirque_right)
+config SHIELD_CHARYBDIS_CIRQUE_CENTRAL_LEFT
+    def_bool $(shields_list_contains,charybdis_cirque_central_left)
+    
+config SHIELD_CHARYBDIS_CIRQUE_PERIPHERAL_LEFT
+    def_bool $(shields_list_contains,charybdis_cirque_peripheral_left)
+
+config SHIELD_CHARYBDIS_CIRQUE_PERIPHERAL_RIGHT
+    def_bool $(shields_list_contains,charybdis_cirque_peripheral_right)
