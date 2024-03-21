@@ -113,12 +113,12 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&kp ESC     &kp N1            &kp N2        &kp N3         &kp N4         &kp N5        &kp MINUS     &kp EQUAL      &kp N6     &kp N7          &kp N8      &kp N9     &kp N0      &kp BSPC
-&kp TAB     &kp Q             &kp W         &kp E          &kp R          &kp T         &hpfx         &QCS           &kp Y      &kp U           &kp I       &kp O      &kp P       &kp MINUS
-&kp CLCK    &kp A             &kp S         &kp D          &kp F          &kp G         &kp UP_ARROW  &kp BACKSPACE  &kp H      &kp J           &kp K       &kp L      &kp COLON   &kp EQUAL
-&kp LSHIFT  &kp Z             &kp X         &kp C          &kp V          &kp B                                      &kp SLASH  &kp N           &kp M       &kp COMMA  &kp PERIOD  &kp GRAVE
-&kp LCTRL   &kp LC(NUMBER_2)  &bz2          &altzz         &lt 1 SPACE    &kp ENTER                                  &kp ENTER  &lt 1 SPACE     &kp KP_DOT  &kp QMARK  &mo 2       &mo 3
-                              &kp LEFT_ALT  &kp BACKSPACE  &kp BACKSPACE  &kp LEFT_GUI                               &mo 3      &kp DOWN_ARROW  &kp LEFT    &kp RIGHT
+&kp ESC     &kp N1            &kp N2        &kp N3         &kp N4         &kp N5        &hpfx           &kp EQUAL  &kp N6       &kp N7          &kp N8      &kp N9     &kp N0      &kp BSPC
+&kp TAB     &kp Q             &kp W         &kp E          &kp R          &kp T         &kp UP_ARROW    &QCS       &kp Y        &kp U           &kp I       &kp O      &kp P       &kp MINUS
+&kp CLCK    &kp A             &kp S         &kp D          &kp F          &kp G         &kp DOWN_ARROW  &bz2       &kp H        &kp J           &kp K       &kp L      &kp COLON   &kp EQUAL
+&kp LSHIFT  &kp Z             &kp X         &kp C          &kp V          &kp B                                    &kp SLASH    &kp N           &kp M       &kp COMMA  &kp PERIOD  &kp GRAVE
+&kp LCTRL   &kp LC(NUMBER_2)  &bz2          &altzz         &kp SPACE      &lt 1 ENTER                              &lt 1 ENTER  &kp SPACE       &kp KP_DOT  &kp QMARK  &mo 2       &mo 3
+                              &kp LEFT_ALT  &kp BACKSPACE  &kp BACKSPACE  &kp LEFT_GUI                             &mo 3        &kp DOWN_ARROW  &kp LEFT    &kp RIGHT
             >;
         };
 
@@ -137,24 +137,24 @@
         symbol_layer {
             label = "SYMBOL";
             bindings = <
-&dongle_bootload_macro        &none         &none      &none  &none  &none  &none  &none  &none     &none     &none              &none      &none              &none
-&none         &none         &none      &none  &none  &none  &none  &none  &none     &none     &kp C_VOLUME_UP    &none      &kp C_VOLUME_UP    &kp C_PREVIOUS
-&kp C_BRI_UP  &kp C_BRI_DN  &none      &none  &none  &none  &none  &none  &kp LEFT  &kp DOWN  &kp C_VOLUME_DOWN  &kp RIGHT  &kp C_VOLUME_DOWN  &kp C_NEXT
-&none         &none         &none      &none  &none  &none                &none     &none     &none              &none      &kp C_PLAY_PAUSE   &none
-&none         &none         &none      &none  &none  &none                &none     &none     &none              &none      &none              &none
-                            &kp LSHFT  &none  &none  &none                &kp C_RW  &kp C_FF  &none              &none
+&dongle_bootload_macro  &none         &none      &none  &none  &none  &none  &none  &none     &none     &none              &none      &none              &none
+&none                   &none         &none      &none  &none  &none  &none  &none  &none     &none     &kp C_VOLUME_UP    &none      &kp C_VOLUME_UP    &kp C_PREVIOUS
+&kp C_BRI_UP            &kp C_BRI_DN  &none      &none  &none  &none  &none  &none  &kp LEFT  &kp DOWN  &kp C_VOLUME_DOWN  &kp RIGHT  &kp C_VOLUME_DOWN  &kp C_NEXT
+&none                   &none         &none      &none  &none  &none                &none     &none     &none              &none      &kp C_PLAY_PAUSE   &none
+&none                   &none         &none      &none  &none  &none                &none     &none     &none              &none      &none              &none
+                                      &kp LSHFT  &none  &none  &none                &kp C_RW  &kp C_FF  &none              &none
             >;
         };
 
         hotkey_layer {
             label = "HOTKEY";
             bindings = <
-&bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &bt BT_CLR    &none  &out OUT_USB  &none         &none  &none         &none         &none
-&none          &none         &none         &none         &none         &none  &out OUT_USB  &none  &bt BT_SEL 0  &bt BT_SEL 1  &none  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&none          &none         &none         &none         &none         &none  &out OUT_BLE  &none  &out OUT_USB  &none         &none  &none         &none         &none
-&kp BACKSPACE  &none         &none         &none         &none         &none                       &out OUT_BLE  &none         &none  &none         &none         &kp BACKSPACE
-&none          &none         &none         &bootloader   &none         &none                       &none         &none         &none  &none         &none         &none
-                             &none         &none         &none         &none                       &none         &none         &none  &none
+&bt BT_SEL 0            &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &bt BT_CLR    &none  &out OUT_USB  &none         &none  &none         &none         &none
+&none                   &none         &none         &none         &none         &none  &out OUT_USB  &none  &bt BT_SEL 0  &bt BT_SEL 1  &none  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&none                   &none         &none         &none         &none         &none  &out OUT_BLE  &none  &out OUT_USB  &none         &none  &none         &none         &none
+&kp BACKSPACE           &none         &none         &none         &none         &none                       &out OUT_BLE  &none         &none  &none         &none         &kp BACKSPACE
+&dongle_bootload_macro  &none         &none         &bootloader   &none         &none                       &none         &none         &none  &none         &none         &none
+                                      &none         &none         &none         &none                       &none         &none         &none  &none
             >;
         };
     };
