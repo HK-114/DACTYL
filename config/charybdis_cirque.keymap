@@ -106,12 +106,12 @@
         number_layer {
             label = "NUMBER";
             bindings = <
-&none  &kp F1         &kp F2          &kp F3          &kp F4           &kp F5    &none   &kp F12  &kp F6  &kp F7          &kp F8          &kp F9           &kp F10  &kp F11
-&none  &kp LA(LC(Q))  &caps_word      &kp UP_ARROW    &none            &QCS      &bthbc  &none    &none   &none           &kp UP_ARROW    &none            &none    &kp F12
-&none  &kp LA(A)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &tcj      &hpfx   &none    &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none
-&none  &none          &none           &none           &zspace          &ctrltab                   &none   &none           &kp QUESTION    &none            &none    &none
-&none  &none          &none           &none           &none            &none                      &none   &none           &none           &none            &none    &none
-                      &none           &kp BSPC        &kp BSPC         &none                      &none   &none           &none           &none
+&none  &kp F1         &kp F2          &kp F3          &kp F4           &kp F5    &none   &kp F12  &kp F6        &kp F7          &kp F8          &kp F9           &kp F10  &kp F11
+&none  &kp LA(LC(Q))  &caps_word      &kp UP_ARROW    &none            &QCS      &bthbc  &none    &none         &none           &kp UP_ARROW    &none            &none    &kp F12
+&none  &kp LA(A)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &tcj      &hpfx   &none    &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none
+&none  &none          &none           &none           &zspace          &ctrltab                   &kp QUESTION  &none           &kp QUESTION    &none            &none    &none
+&none  &none          &none           &none           &none            &none                      &none         &none           &none           &none            &none    &none
+                      &none           &kp BSPC        &kp BSPC         &none                      &none         &none           &none           &none
             >;
         };
 
