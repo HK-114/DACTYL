@@ -98,7 +98,7 @@
 &kp TAB     &kp Q   &kp W         &kp E   &kp R          &kp T         &kp DOWN_ARROW  &kp EQUAL      &kp Y         &kp U      &kp I     &kp O       &kp P       &kp MINUS
 &mo 1       &kp A   &kp S         &kp D   &kp F          &kp G         &kp BACKSPACE   &kp BACKSPACE  &kp H         &kp J      &kp K     &kp L       &kp COLON   &kp EQUAL
 &kp LSHIFT  &kp Z   &kp X         &kp C   &kp V          &kp B                                        &kp KP_SLASH  &kp N      &kp M     &kp COMMA   &kp PERIOD  &kp TILDE
-&kp LCTRL   &none   &bz2          &altzz  &kp SPACE      &kp ENTER                                    &kp ENTER     &kp SPACE  &mo 1     &kp KP_DOT  &mo 2       &mo 3
+&kp LCTRL   &kp N0  &bz2          &altzz  &kp SPACE      &kp ENTER                                    &kp ENTER     &kp SPACE  &mo 1     &kp KP_DOT  &mo 2       &mo 3
                     &kp LEFT_ALT  &mo 1   &kp BACKSPACE  &kp LEFT_GUI                                 &mo 3         &mo 2      &kp LEFT  &kp RIGHT
             >;
         };
