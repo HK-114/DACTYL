@@ -106,18 +106,30 @@
         };
     };
 
+    behaviors {
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTO_SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <135>;
+            quick-tap-ms = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             label = "DEFAULT";
             bindings = <
-&kp ESC     &kp N1        &kp N2  &kp N3     &kp N4        &kp N5        &kp UP_ARROW    &kp MINUS      &kp N6         &kp N7         &kp N8    &kp N9      &kp N0      &kp BSPC
-&kp TAB     &kp Q         &kp W   &kp E      &kp R         &kp T         &kp DOWN_ARROW  &kp EQUAL      &kp Y          &kp U          &kp I     &kp O       &kp P       &kp MINUS
-&kp CLCK    &kp A         &kp S   &kp D      &kp F         &kp G         &kp BACKSPACE   &kp BACKSPACE  &kp H          &kp J          &kp K     &kp L       &kp COLON   &kp EQUAL
-&kp LSHIFT  &kp Z         &kp X   &kp C      &kp V         &kp B                                        &kp KP_DIVIDE  &kp N          &kp M     &kp COMMA   &kp PERIOD  &kp GRAVE
-&kp LCTRL   &kp NUMBER_0  &bz2    &altzz     &kp LEFT_ALT  &kp SPACE                                    &kp SPACE      &kp BACKSPACE  &mo 1     &kp KP_DOT  &mo 2       &mo 3
-                          &mo 1   &kp ENTER  &kp ENTER     &kp LEFT_GUI                                 &mo 3          &mo 2          &kp LEFT  &kp RIGHT
+&kp ESC     &kp N1        &kp N2        &kp N3     &kp N4     &kp N5        &lt 1 BACKSPACE  &as UNDERSCORE MINUS  &kp N6         &kp N7         &kp N8    &kp N9      &kp N0      &kp BSPC
+&kp TAB     &kp Q         &kp W         &kp E      &kp R      &kp T         &kp UP_ARROW     &as PLUS EQUAL        &kp Y          &kp U          &kp I     &kp O       &kp P       &kp MINUS
+&kp CLCK    &kp A         &kp S         &kp D      &kp F      &kp G         &kp DOWN_ARROW   &kp BACKSPACE         &kp H          &kp J          &kp K     &kp L       &kp COLON   &kp EQUAL
+&kp LSHIFT  &kp Z         &kp X         &kp C      &kp V      &kp B                                                &kp KP_DIVIDE  &kp N          &kp M     &kp COMMA   &kp PERIOD  &kp GRAVE
+&kp LCTRL   &kp NUMBER_0  &bz2          &altzz     &mo 2      &kp SPACE                                            &kp SPACE      &kp BACKSPACE  &mo 1     &kp KP_DOT  &mo 2       &mo 3
+                          &kp LEFT_ALT  &kp ENTER  &kp ENTER  &kp LEFT_GUI                                         &mo 3          &mo 2          &kp LEFT  &kp RIGHT
             >;
         };
 
@@ -136,12 +148,12 @@
         symbol_layer {
             label = "SYMBOL";
             bindings = <
-&dongle_bootload_macro  &none         &none      &none  &none  &none  &none  &none  &none         &none     &none              &none      &none              &none
-&none                   &none         &none      &none  &none  &none  &none  &none  &none         &none     &kp C_VOLUME_UP    &none      &kp C_VOLUME_UP    &kp C_PREVIOUS
-&kp C_BRI_UP            &kp C_BRI_DN  &none      &none  &none  &none  &none  &none  &kp LEFT      &kp DOWN  &kp C_VOLUME_DOWN  &kp RIGHT  &kp C_VOLUME_DOWN  &kp C_NEXT
-&none                   &none         &none      &none  &none  &none                &kp QUESTION  &none     &kp QUESTION       &none      &kp C_PLAY_PAUSE   &none
-&none                   &none         &none      &none  &none  &none                &none         &none     &none              &none      &none              &none
-                                      &kp LSHFT  &none  &none  &none                &kp C_RW      &kp C_FF  &none              &none
+&dongle_bootload_macro  &none         &none         &none         &none         &kp SLASH     &none  &none  &none         &none     &none              &none      &none              &none
+&none                   &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &none  &none  &none         &none     &kp C_VOLUME_UP    &none      &kp C_VOLUME_UP    &kp C_PREVIOUS
+&kp C_BRI_UP            &kp C_BRI_DN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS     &none  &none  &kp LEFT      &kp DOWN  &kp C_VOLUME_DOWN  &kp RIGHT  &kp C_VOLUME_DOWN  &kp C_NEXT
+&none                   &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS                    &kp QUESTION  &none     &kp QUESTION       &none      &kp C_PLAY_PAUSE   &none
+&none                   &kp NUMBER_0  &kp NUMBER_0  &kp KP_DOT    &none         &mo 1                       &none         &none     &none              &none      &none              &none
+                                      &kp LSHFT     &none         &none         &none                       &kp C_RW      &kp C_FF  &none              &none
             >;
         };
 
