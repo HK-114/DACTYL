@@ -157,12 +157,12 @@
         symbol_layer {
             label = "SYMBOL";
             bindings = <
-&dongle_bootload_macro  &QCS   &hpfx         &tcj          &bthbc        &none          &as KP_SLASH ASTERISK  &none  &none         &none     &none              &none      &none              &none
-&none                   &FW2   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none          &as MINUS PLUS         &none  &none         &none     &kp C_VOLUME_UP    &none      &kp C_VOLUME_UP    &kp C_PREVIOUS
-&none                   &tcj   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0   &none                  &none  &kp LEFT      &kp DOWN  &kp C_VOLUME_DOWN  &kp RIGHT  &kp C_VOLUME_DOWN  &kp C_NEXT
-&kp LEFT_SHIFT          &hpfx  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT                                   &kp QUESTION  &none     &kp QUESTION       &none      &kp C_PLAY_PAUSE   &none
-&kp LCTRL               &none  &none         &none         &none         &kp BACKSPACE                                &none         &none     &none              &none      &none              &none
-                               &kp LSHFT     &none         &none         &none                                        &kp C_RW      &kp C_FF  &none              &none
+&kp ENTER       &QCS    &hpfx         &tcj          &bthbc        &none          &as KP_SLASH ASTERISK  &none  &none         &none     &none              &none      &none              &none
+&none           &FW2    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none          &as MINUS PLUS         &none  &none         &none     &kp C_VOLUME_UP    &none      &kp C_VOLUME_UP    &kp C_PREVIOUS
+&none           &tcj    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0   &none                  &none  &kp LEFT      &kp DOWN  &kp C_VOLUME_DOWN  &kp RIGHT  &kp C_VOLUME_DOWN  &kp C_NEXT
+&kp LEFT_SHIFT  &hpfx   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT                                   &kp QUESTION  &none     &kp QUESTION       &none      &kp C_PLAY_PAUSE   &none
+&kp LCTRL       &bthbc  &none         &none         &none         &kp BACKSPACE                                &none         &none     &none              &none      &none              &none
+                        &kp LSHFT     &none         &none         &none                                        &kp C_RW      &kp C_FF  &none              &none
             >;
         };
 
