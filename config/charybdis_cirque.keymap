@@ -58,7 +58,7 @@
         bthbc: bthbc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp B &kp T &kp H &kp B &kp C &kp SPACE>;
+            bindings = <&kp B &kp T &kp SPACE>;
             label = "BTHBC";
             wait-ms = <5>;
             tap-ms = <5>;
