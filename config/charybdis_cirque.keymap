@@ -133,12 +133,12 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&kp ESC        &kp N1        &kp N2        &kp N3     &kp N4     &kp N5              &lt 1 BACKSPACE  &kp MINUS      &kp N6        &kp N7         &kp N8    &kp N9      &kp N0      &kp BSPC
-&kp TAB        &kp Q         &kp W         &kp E      &kp R      &kp T               &kp UP_ARROW     &kp EQUAL      &kp Y         &kp U          &kp I     &kp O       &kp P       &kp MINUS
-&kp BACKSPACE  &kp A         &kp S         &kp D      &kp F      &kp G               &kp DOWN_ARROW   &kp BACKSPACE  &kp H         &kp J          &kp K     &kp L       &kp COLON   &kp EQUAL
-&kp LSHIFT     &kp Z         &kp X         &kp C      &kp V      &kp B                                               &kp KP_SLASH  &kp N          &kp M     &kp COMMA   &kp PERIOD  &kp GRAVE
-&kp LCTRL      &kp NUMBER_0  &bz2          &altzz     &mo 2      &kp SPACE                                           &kp SPACE     &kp BACKSPACE  &mo 1     &kp KP_DOT  &mo 2       &mo 3
-                             &kp LEFT_ALT  &kp ENTER  &kp ENTER  &as LG(D) LEFT_GUI                                  &mo 3         &mo 1          &kp LEFT  &kp RIGHT
+&kp ESC       &kp N1        &kp N2        &kp N3     &kp N4     &kp N5              &lt 1 BACKSPACE  &kp MINUS      &kp N6        &kp N7         &kp N8    &kp N9      &kp N0      &kp BSPC
+&kp TAB       &kp Q         &kp W         &kp E      &kp R      &kp T               &kp UP_ARROW     &kp EQUAL      &kp Y         &kp U          &kp I     &kp O       &kp P       &kp MINUS
+&kp CAPSLOCK  &kp A         &kp S         &kp D      &kp F      &kp G               &kp DOWN_ARROW   &kp BACKSPACE  &kp H         &kp J          &kp K     &kp L       &kp COLON   &kp EQUAL
+&kp LSHIFT    &kp Z         &kp X         &kp C      &kp V      &kp B                                               &kp KP_SLASH  &kp N          &kp M     &kp COMMA   &kp PERIOD  &kp GRAVE
+&kp LCTRL     &kp NUMBER_0  &bz2          &altzz     &mo 2      &kp SPACE                                           &kp SPACE     &kp BACKSPACE  &mo 1     &kp KP_DOT  &mo 2       &mo 3
+                            &kp LEFT_ALT  &kp ENTER  &kp ENTER  &as LG(D) LEFT_GUI                                  &mo 3         &mo 1          &kp LEFT  &kp RIGHT
             >;
         };
 
@@ -157,12 +157,12 @@
         symbol_layer {
             label = "SYMBOL";
             bindings = <
-&kp ENTER       &QCS    &hpfx           &tcj          &bthbc        &kp SLASH     &kp ASTERISK  &none  &none         &none     &none              &none      &none              &none
-&none           &FW2    &kp UP_ARROW    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS     &none  &none         &none     &kp C_VOLUME_UP    &none      &kp C_VOLUME_UP    &kp C_PREVIOUS
-&none           &hpfx   &kp DOWN_ARROW  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &none  &kp LEFT      &kp DOWN  &kp C_VOLUME_DOWN  &kp RIGHT  &kp C_VOLUME_DOWN  &kp C_NEXT
-&kp LEFT_SHIFT  &tcj    &kp NUMBER_1    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3                       &kp QUESTION  &none     &kp QUESTION       &none      &kp C_PLAY_PAUSE   &none
-&kp LCTRL       &bthbc  &kp NUMBER_0    &kp NUMBER_0  &none         &kp KP_DOT                         &none         &none     &none              &none      &none              &none
-                        &kp LSHFT       &none         &none         &none                              &kp C_RW      &kp C_FF  &none              &none
+&kp ENTER       &QCS          &hpfx         &tcj          &bthbc          &kp SLASH   &kp ASTERISK  &none  &none         &none     &none              &none      &none              &none
+&QCS            &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp BACKSPACE   &FW2        &kp MINUS     &none  &none         &none     &kp C_VOLUME_UP    &none      &kp C_VOLUME_UP    &kp C_PREVIOUS
+&FW2            &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp UP_ARROW    &tcj        &kp PLUS      &none  &kp LEFT      &kp DOWN  &kp C_VOLUME_DOWN  &kp RIGHT  &kp C_VOLUME_DOWN  &kp C_NEXT
+&kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOWN_ARROW  &hpfx                            &kp QUESTION  &none     &kp QUESTION       &none      &kp C_PLAY_PAUSE   &none
+&kp LCTRL       &kp NUMBER_0  &kp NUMBER_0  &kp KP_DOT    &none           &kp KP_DOT                       &none         &none     &none              &none      &none              &none
+                              &kp LSHFT     &none         &none           &none                            &kp C_RW      &kp C_FF  &none              &none
             >;
         };
 
