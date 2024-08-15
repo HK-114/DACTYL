@@ -11,6 +11,12 @@
 
 #define AS(keycode) &as LS(keycode) keycode
 
+&lt {
+    tapping-term-ms = <180>;
+    quick-tap-ms = <180>;
+    require-prior-idle-ms = <180>;
+};
+
 / {
     macros {
         dongle_bootload_macro: bootload_macro {
