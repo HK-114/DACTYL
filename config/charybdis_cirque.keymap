@@ -150,7 +150,7 @@
             >;
         };
 
-        number_layer {
+        NO1 {
             label = "1";
             bindings = <
 &none           &kp F1  &kp F2          &kp F3          &kp F4           &kp F5         &kp F11  &kp F12  &kp F6        &kp F7        &kp F8  &kp F9  &kp F10  &none
@@ -162,7 +162,7 @@
             >;
         };
 
-        symbol_layer {
+        NO2 {
             label = "2";
             bindings = <
 &kp ENTER       &QCS           &hpfx       &tcj        &bthbc  &bthbc      &none         &none  &none         &none     &none              &none      &none              &none
@@ -174,7 +174,7 @@
             >;
         };
 
-        system_layer {
+        NO3 {
             label = "3";
             bindings = <
 &bt BT_SEL 0            &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR  &bt BT_CLR_ALL  &none  &out OUT_USB  &none         &none  &none         &none         &none
